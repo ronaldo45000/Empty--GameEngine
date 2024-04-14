@@ -1,5 +1,9 @@
 /** Global Parameters Object */
-const params = { };
+const PARAMETERS = {
+    dimension: 200,
+    size: 10, // 1000/dimension
+    
+};
 
 /**
  * @param {Number} n
@@ -54,6 +58,6 @@ window.requestAnimFrame = (() => {
  * @param {Number} p1, p2 Two objects with x and y coordinates
  * @returns Distance between the two points
  */
-const getDistance = (p1, p2) => {
+const distance = (p1, p2) => {
     return Math.sqrt(Math.pow(p2.x - p1.x, 2) + Math.pow(p2.y - p1.y, 2));
 };
